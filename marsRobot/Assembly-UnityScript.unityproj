@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{E2C48928-EA49-3F8B-DE24-F1CB10D03245}</ProjectGuid>
+	<ProjectGuid>{4F2F4FC9-16F3-C91B-C7B7-6AE383A2BC8A}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -44,18 +44,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Assets\Scripts\Environment\Camera\CameraFocus.cs" />
-     <Compile Include="Assets\Assets\Scripts\Personajes\ColisionTrampas.cs" />
-     <Compile Include="Assets\Assets\Scripts\Props\Sierra.cs" />
-     <Compile Include="Assets\Assets\Scripts\Props\TechoAplastante.cs" />
-     <Compile Include="Assets\Assets\Scripts\Props\Trampolin.cs" />
- <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
- </Reference>
+     <Compile Include="Assets\Assets\Scripts\Environment\Camera\CameraFocus.js" />
+     <Compile Include="Assets\Assets\Scripts\Environment\Camera\CameraScrolling.js" />
+     <Compile Include="Assets\Assets\Scripts\Environment\Camera\CameraTargetAttributes.js" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
-      <Project>{09B5B91D-AAE3-2A2A-8693-2D5DB68AB7F7}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{09B5B91D-AAE3-2A2A-8693-2D5DB68AB7F7}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{F9E3FFD9-E4BA-E530-8F58-60C287B94355}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

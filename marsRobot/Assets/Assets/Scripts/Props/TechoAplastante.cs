@@ -13,7 +13,7 @@ public class TechoAplastante : MonoBehaviour {
 	
 	}
 
-    void OnTriggerEnter(Collision other)
+    void OnTriggerEnter(Collider other)
     { 
         if(other.gameObject.tag == "Player")
         {
